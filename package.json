@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fluentui/react": "^8.0.0",
+    "@fluentui/web-components": "latest",
+    "@microsoft/fast-components": "^2.20.2",
+    "@microsoft/fast-element": "^1.7.0",
+    "@microsoft/fast-foundation": "^2.32.3",
+    "@microsoft/fast-react-wrapper": "^0.1.26",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -18,11 +22,10 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+    "start": "EXTEND_ESLINT=true react-scripts start",
+    "build": "EXTEND_ESLINT=true react-scripts build",
+    "test": "EXTEND_ESLINT=true react-scripts test"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
