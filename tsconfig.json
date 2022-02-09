@@ -21,6 +21,12 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "eslintConfig": {
+      "extends": "react-app",
+      "rules": {
+          "no-unused-expressions": "off"
+      }
+  },
   "include": [
     "src"
   ]
