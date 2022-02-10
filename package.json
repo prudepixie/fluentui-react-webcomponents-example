@@ -25,7 +25,7 @@
     "start": "EXTEND_ESLINT=true react-scripts start",
     "build": "EXTEND_ESLINT=true react-scripts build",
     "test": "EXTEND_ESLINT=true react-scripts test",
-    "deploy": "surge --domain fluentui-react-webcomponents.surge.sh"
+    "deploy": "EXTEND_ESLINT=true react-scripts build && surge --domain fluentui-react-webcomponents.surge.sh"
 },
   "eslintConfig": {
     "extends": [
