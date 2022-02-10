@@ -1,5 +1,4 @@
 import { 
-  fluentButton,
   provideFluentDesignSystem,
 } from '@fluentui/web-components';
 import { provideReactWrapper } from '@microsoft/fast-react-wrapper';
@@ -10,11 +9,10 @@ const { wrap } = provideReactWrapper(
   provideFluentDesignSystem()
 );
 
-export const FluentButton = wrap(fluentButton())
 
 
 export const App = () => {
   return (
-    <FluentButton appearance="accent">Button</FluentButton>
+    <div></div>
   );
 }
