@@ -5,29 +5,27 @@ import React from 'react';
 
 const template = html<_ExampleCard>`
     <fluent-card>
-        <slot name="header"></slot>
-        <slot name="body"></slot>
+        <div>
+            <div class="left">
+                <img src=${x => x.imageUrl} alt="matt avatar"/>
+            </div>
+            <div class="right">
+                <span class="title">Title goes here</span>
+                <span class="secondary"> Secondary line</span>
+            </div>
+        </div>
+        <p>Citizens of distant epochs muse about at the edge of forever hearts of the...</p>
     </fluent-card>
 `;
 
-const styles = css`
-    :host fluent-card {
-        background-color: rgb(250, 249, 248);
-        padding: 1rem;
-        box-sizing: border-box;
-        width: 18.75rem;
-    }
-    :host fluent-card:hover {
-        background-color: rgb(237, 235, 233);
-    }
-`
-
-@customElement({
+@customElement({ 
   name: 'fluent-card-container',
   template,
-  styles
+  shadowOptions: null
 })
 
-class _ExampleCard extends FASTElement {}
+class _ExampleCard extends FASTElement {
+    imageUrl = `${process.env.PUBLIC_URL}/matt.jpg`
+}
 
 export const ExampleCard = provideReactWrapper(React).wrap(_ExampleCard)

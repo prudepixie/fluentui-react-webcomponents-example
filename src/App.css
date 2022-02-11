@@ -3,6 +3,16 @@ body {
   font-size: 0.875rem;
   line-height: 1.4286;
 }
+fluent-card {
+  background-color: rgb(250, 249, 248);
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 18.75rem;
+}
+fluent-card:hover {
+  background-color: rgb(237, 235, 233);
+}
+
 div {
   display: flex;
 }
