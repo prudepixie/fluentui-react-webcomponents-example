@@ -1,4 +1,4 @@
-import { FASTElement, customElement, css, html } from '@microsoft/fast-element';
+import { FASTElement, customElement, html } from '@microsoft/fast-element';
 import { provideReactWrapper } from '@microsoft/fast-react-wrapper';
 import React from 'react';
 
