@@ -4,9 +4,6 @@
   "private": true,
   "dependencies": {
     "@fluentui/web-components": "latest",
-    "@microsoft/fast-components": "^2.20.2",
-    "@microsoft/fast-element": "^1.7.0",
-    "@microsoft/fast-foundation": "^2.32.3",
     "@microsoft/fast-react-wrapper": "^0.1.26",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -18,15 +15,17 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "source-map-explorer": "^2.5.2",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "EXTEND_ESLINT=true react-scripts start",
     "build": "EXTEND_ESLINT=true react-scripts build",
     "test": "EXTEND_ESLINT=true react-scripts test",
     "deploy": "EXTEND_ESLINT=true react-scripts build && surge --domain fluentui-react-webcomponents.surge.sh"
-},
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

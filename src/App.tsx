@@ -13,8 +13,4 @@ const { wrap } = provideReactWrapper(
 const FluentButton = wrap(fluentButton())
 
 
-export const App = () => {
-  return (
-    <FluentButton appearance="accent">Button</FluentButton>
-  );
-}
+export default () => <FluentButton appearance="accent">Button</FluentButton>
