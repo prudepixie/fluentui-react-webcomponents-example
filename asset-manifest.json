@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/fluentui-react-webcomponents-example/static/js/main.3a8201f5.js",
+    "main.js": "/fluentui-react-webcomponents-example/static/js/main.b70a58b8.js",
     "index.html": "/fluentui-react-webcomponents-example/index.html",
-    "main.3a8201f5.js.map": "/fluentui-react-webcomponents-example/static/js/main.3a8201f5.js.map"
+    "main.b70a58b8.js.map": "/fluentui-react-webcomponents-example/static/js/main.b70a58b8.js.map"
   },
   "entrypoints": [
-    "static/js/main.3a8201f5.js"
+    "static/js/main.b70a58b8.js"
   ]
 }
